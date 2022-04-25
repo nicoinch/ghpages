@@ -18,6 +18,10 @@ else
   REMOTE_BRANCH="gh-pages"
 fi && \
 git init && \
+echo "***** pwd ******" && \
+pwd && \
+echo "***** ls -al ******" && \
+ls -al && \
 git config user.name "${GITHUB_ACTOR}" && \
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
 if [ -z "$(git status --porcelain)" ]; then
